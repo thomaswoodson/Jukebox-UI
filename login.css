@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url('img/noise.png');
+	background-repeat: repeat;
+	font-size: 76%; /* 1em = 10pt */
+}
+
+.center {
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type=text] {
+	border: 1px solid #900;
+	color: #CCC;
+	font-style: italic;
+	height: 20px;
+	margin-top: 10px;
+	width: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+input:focus {
+	border: 1px solid #09F;
+}
+
+/* ----- Vote Down Ribbon End -------*/
+#leftTab { /* Container */
+	float: left;
+	height: 80px;
+	margin-left: 60px;
+	margin-top: -90px;
+	position: relative;
+	width: 77px;
+	z-index: 2;
+}
+
+#leftTab-tip {
+	background-image: url('img/ribbon-tip-left.png');
+	float: left;
+	height: 81px;
+	width: 11px;
+	z-index: 2;
+}
+
+#leftTab-box {
+	background-color: #c32d2d;
+	float: left;
+	height: 81px;
+	width: 66px;
+	z-index: 2;
+}/* -----------------------------*/
+
+#login { /* container for input form */
+	margin-top: 9px;
+}
+
+#logo {
+	height: 51px;
+	position: relative;
+	top: 324px;
+	z-index: 2;
+}
+
+#record { /* vinyl record image */
+	margin-top: 150px;
+	z-index: 1;
+}
+
+#record-container {
+	height: 1px;
+	overflow: visible;
+	position: relative;
+	top: 200px;
+	width: 100%;
+}
+
+#record-group {
+	height: 400px;
+	left: 50%;
+	margin-left: -330px;
+	position: relative;
+	top: -200px;
+	width: 660px;
+	z-index: 2;
+}
+
+#ribbon { /* container for entire ribbon group */
+	height: 146px;
+	position: absolute;
+	top: 355px;
+	width: 660px;
+}
+
+#ribbon-middle { /* main center rectangle of the ribbon */
+	border-color: #eb7070;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+	height: 100px;
+	margin-top: 20px;
+	position: relative;
+	text-align: center;
+	width: 486px;
+	z-index: 4;
+	/*--Gradient--*/
+		background: #db3535; /* Old browsers */
+		background: -moz-linear-gradient(top, #db3535 0%, #c02e2b 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db3535), color-stop(100%,#c02e2b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #db3535 0%,#c02e2b 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #db3535 0%,#c02e2b 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #db3535 0%,#c02e2b 100%); /* IE10+ */
+		background: linear-gradient(top, #db3535 0%,#c02e2b 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3535', endColorstr='#c02e2b',GradientType=0 ); /* IE6-9 */
+	/*------------*/
+}
+
+/* ----- Vote Up Ribbon End -------*/
+#rightTab { /* Container */
+	float: right;
+	height: 80px;
+	margin-right: 60px;
+	margin-top: -90px;
+	position: relative;
+	width: 77px;
+	z-index: 2;
+}
+
+#rightTab-box { 
+	background-color: #c32d2d;
+	float: right;
+	height: 81px;
+	width: 66px;
+}
+
+#rightTab-tip {
+	background-image: url('img/ribbon-tip-right.png');
+	float: right;
+	height: 81px;
+	width: 11px;
+}/* -----------------------------*/
+

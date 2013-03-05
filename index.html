@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" type="text/css" href="main.css" />
+   <link rel="stylesheet" type="text/css" href="main-animation.css" />
+   <link href='http://fonts.googleapis.com/css?family=Lato:200,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Signika:300,600' rel='stylesheet' type='text/css'>
+   <title>Purify</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   
+   <script type="text/javascript">
+	   
+   $(document).ready(function(){
+	 	$('div#votedown-box').mouseover(function(){
+		   		$('div#leftTab').addClass("votedownOut");
+			}).mouseout(function(){
+		   		$('div#leftTab').removeClass("votedownOut");
+			});
+		$('div#voteup-box').mouseover(function(){
+				$('div#rightTab').addClass("voteupOut");
+			}).mouseout(function(){
+				$('div#rightTab').removeClass("voteupOut");
+		});
+   });
+		
+   </script>
+</head>
+
+<body>
+   <div id="record-container">
+      <div id="record-group" class="animated bounceInDown"> 
+         <div id="logo">
+            <img src="img/purify.png" alt="logo" class="center"/>
+         </div>
+         <div id="ribbon">
+            <div id="music-info" class="center">
+               <div class="playlist-info">
+                  <h1>Name of Playlist</h1>
+               </div>
+               <div class="track-info">
+                  <h2>Current Song / Current Artist</h2>
+               </div>
+            </div>
+            <div id="leftTab" class="votedownIn">
+               <div id="votedown-tip"></div>
+               <div id="votedown-box">
+                  <p class="voteDown">0</p>
+                  <p class="voteDown">&ndash;</p>
+               </div>
+            </div>
+            <div id="rightTab" class="voteupIn">
+               <div id="voteup-tip"></div>
+               <div id="voteup-box">
+                  <p class="voteUp">3</p>
+                  <p class="voteUp">+</p>
+               </div>
+            </div>
+         </div>
+         <div id="record">
+            <img src="img/record.png" alt="record" class="center"/>
+         </div>
+       </div>  
+   </div>
+   <div id="currentDJbox" class="center animated fadeInUpBig">
+      <div class="djphoto"></div>
+      <div class="dj">
+        <p class="djname-submit">submitted by:</p>
+        <p class="djname-name">Current DJ</p>
+      </div>
+   </div>
+   <div id="chatbox" class="center animated fadeInUpBig">
+      <div id="commentInput">
+         <p>Type comment then press enter...</p>
+      </div>
+      <div class="comment">
+         <div class="commentPhoto"></div>
+         <div class="commentText">
+            <h3>Username</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>   
+      </div>
+      <div class="comment">
+         <div class="commentPhoto"></div>
+         <div class="commentText">
+            <h3>Username</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>   
+      </div>
+      <div class="comment">
+         <div class="commentPhoto"></div>
+         <div class="commentText">
+            <h3>Username</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>   
+      </div>
+      <div class="comment">
+         <div class="commentPhoto"></div>
+         <div class="commentText">
+            <h3>Username</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>   
+      </div>
+      <div class="comment">
+         <div class="commentPhoto"></div>
+         <div class="commentText">
+            <h3>Username</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>   
+      </div>
+      <div class="comment">
+         <div class="commentPhoto"></div>
+         <div class="commentText">
+            <h3>Username</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>   
+      </div>
+   </div>
+
+</body>
+</html>

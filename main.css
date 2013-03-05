@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url('img/noise.png');
+	background-repeat: repeat;
+	font-size: 76%; /* 1em = 10pt */
+}
+
+.center {
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comment {
+	clear: both;
+	/*border-top-color: #EEE;
+	border-top-style: dashed;
+	border-top-width: 1px;*/
+	padding: 20px;
+}
+
+#commentInput p {
+	border-bottom: 1px dashed #E9E9E9;
+	color: #CCC;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.commentPhoto{
+	background-color: #CCC;
+	float: left;
+	height: 50px;
+	position: relative;
+	width: 50px;
+}
+
+.commentText{
+	color: #666;
+	float: left;
+	line-height: 0.2em;
+	margin-left: 10px;
+	margin-top: 2px;
+	position: relative;
+}
+
+.commentText p {
+	font-family: 'Signika', sans-serif;
+	font-weight: 300;
+}
+
+#chatbox {
+	background-color: white;
+	border-color: #EEE;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 40px #EAEAEA;
+	height: 600px;
+	margin-top: 0px;
+	position: relative;
+	width: 486px;
+	z-index: 0;
+}
+
+#currentDJbox {
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	height: 100px;
+	margin-top: 350px;
+	position: relative;
+	width: 550px;
+	z-index: 1;
+	/*--Gradient--*/
+	background: #35a2da; /* Old browsers */
+	background: -moz-linear-gradient(top, #35a2da 0%, #2a88b7 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35a2da), color-stop(99%,#2a88b7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #35a2da 0%,#2a88b7 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #35a2da 0%,#2a88b7 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #35a2da 0%,#2a88b7 99%); /* IE10+ */
+	background: linear-gradient(top, #35a2da 0%,#2a88b7 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35a2da', endColorstr='#2a88b7',GradientType=0 ); /* IE6-9 */
+	/*------------*/
+}
+
+.dj { /* ------ Container for DJ info ---------*/
+	float: right;
+	line-height: .4em;
+	margin-top: 22px;
+	margin-right: 30px;
+	position: relative;
+	text-align: right;
+	text-shadow: 1px 1px #226b90;
+	z-index: 2;
+}
+
+.djname-submit {
+	color: white;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size: 1.2em;
+}
+
+.djname-name {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.6em;
+} /* ----------------------------------------*/
+
+.djphoto { /*--- current DJ avatar on the left ----*/
+	background-color: #CCC;
+	border-color: #226b90;
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	height: 70px;
+	margin-left: 30px;
+	margin-top: 15px;
+	position: relative;
+	width: 70px;
+	z-index: 2;
+}
+
+h1 { /* Name of Playlist */
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 2.4em;
+	text-shadow: 1px 1px #902323;
+}
+
+h2 { /* Current Song / Current Artist */
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	font-size: 1.8em;
+	text-shadow: 1px 1px #902323;
+}
+
+h3 { /* Username in Comment */
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+}
+
+#logo {
+	height: 51px;
+	position: relative;
+	top: 324px;
+	z-index: 2;
+}
+
+#music-info { /* wrapper for playlist name, song title, and artist name */
+	border-color: #eb7070;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+	height: 100px;
+	margin-top: 20px;
+	position: relative;
+	text-align: center;
+	width: 486px;
+	z-index: 4;
+	/*--Gradient--*/
+	background: #db3535; /* Old browsers */
+	background: -moz-linear-gradient(top, #db3535 0%, #c02e2b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db3535), color-stop(100%,#c02e2b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #db3535 0%,#c02e2b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #db3535 0%,#c02e2b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #db3535 0%,#c02e2b 100%); /* IE10+ */
+	background: linear-gradient(top, #db3535 0%,#c02e2b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3535', endColorstr='#c02e2b',GradientType=0 ); /* IE6-9 */
+	/*----------------*/
+}
+
+.playlist-info {
+	margin-top: -5px;
+	z-index: 4;
+}
+
+p.voteDown {
+	color: #aa2525;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2.4em;
+	font-weight: bold;
+	line-height: .1em;
+	margin-left: 20px;
+	margin-top: 28px;
+	text-shadow: 0px 1px #eb7070, 0px -1px #6D2318;
+}
+
+p.voteUp {
+	color: #aa2525;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2.4em;
+	font-weight: bold;
+	line-height: 0em;
+	margin-left: 30px;
+	margin-top: 28px;
+	text-shadow: 0px 1px #eb7070, 0px -1px #6D2318;
+}
+
+#record { /* vinyl record image */
+	margin-top: 150px;
+	z-index: 1;
+}
+
+#record-container {
+	height: 1px;
+	overflow: visible;
+	position: relative;
+	top: 20px;
+	width: 100%;
+}
+
+#record-group {
+	height: 400px;
+	left: 50%;
+	margin-left: -330px;
+	position: relative;
+	top: -200px;
+	width: 660px;
+	z-index: 2;
+}
+
+#ribbon {
+	height: 146px;
+	position: absolute;
+	top: 355px;
+	width: 660px;
+}
+
+.track-info {
+	margin-top: -20px;
+}
+
+/* ----- Vote Down Ribbon End -------*/
+.votedownIn { /* Container */
+	cursor: pointer;
+	float: left;
+	height: 80px;
+	margin-left: 20px;
+	margin-top: -90px;
+	position: relative;
+	width: 77px;
+	z-index: 2;
+}
+
+.votedownOut { 
+	cursor: pointer;
+	float: left;
+	height: 80px;
+	margin-left: 10px;
+	margin-top: -90px;
+	width: 77px;
+}
+
+
+#votedown-tip {
+	background-image: url('img/ribbon-tip-left.png');
+	float: left;
+	height: 81px;
+	width: 11px;
+	z-index: 2;
+}
+
+#votedown-box {
+	background-color: #c32d2d;
+	float: left;
+	height: 81px;
+	width: 66px;
+	z-index: 2;
+}
+
+
+/* ----- Vote Up Ribbon End -------*/
+.voteupIn { /* Container */
+	cursor: pointer;
+	float: right;
+	height: 80px;
+	margin-right: 20px;
+	margin-top: -90px;
+	position: relative;
+	width: 77px;
+	z-index: 2;
+}
+
+.voteupOut { /* Container */
+	cursor: pointer;
+	float: right;
+	height: 80px;
+	margin-right: 10px;
+	margin-top: -90px;
+	position: relative;
+	width: 77px;
+	z-index: 2;
+}
+
+#voteup-box { 
+	cursor: pointer;
+	background-color: #c32d2d;
+	float: right;
+	height: 81px;
+	width: 66px;
+}
+
+#voteup-tip {
+	background-image: url('img/ribbon-tip-right.png');
+	float: right;
+	height: 81px;
+	width: 11px;
+}
+
